@@ -10,6 +10,8 @@ public class CustomerOperationsController {
 	@GetMapping("/report")
 	public  String  reportData(@RequestParam("cno") Integer no,
 			                                           @RequestParam(required = false) String cname) {
+		System.out.println("Hello");
+		System.out.println("Hi");
 		return  no+"    "+cname;
 		
 	}
